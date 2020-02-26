@@ -117,7 +117,7 @@ Clock::time_point start_time = Clock::now();
 
     typedef ko execution_space;
 
- Kokkos::initialize();
+  Tpetra::Initialize();
   //Check number of arguments
    if (argc < 4) {
       std::cout <<"\n>>> ERROR: Invalid number of arguments.\n\n";
@@ -455,7 +455,7 @@ Clock::time_point start_time = Clock::now();
    std::cout.copyfmt(oldFormatState);
    return 0;
    
-   Kokkos::finalize();
+   Tpetra::finalize();
 }
 
 
